@@ -1,10 +1,11 @@
 import React from 'react';
+import MainPageLayout from '../components/MainPageLayout';
 
 const Sterren = () => {
   return (
-    <div>
+    <MainPageLayout>
       Dat is Sterren pagina
-    </div>
+    </MainPageLayout>
   )
 }
 

@@ -6,8 +6,8 @@ import Sterren from './pages/Sterren';
 
 function App() {
   return (
-  <div>
-    <Navs />
+
+
     <Switch>
   
       <Route exact path="/">
@@ -21,7 +21,7 @@ function App() {
       <Route><div>Deze was niet gevonden</div></Route>
 
     </Switch>
-  </div>
+
   );
 }
 
