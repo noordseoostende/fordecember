@@ -64,7 +64,7 @@ const Show = () => {
   //   return <div>Error occured: {error}</div>;
   // }
 
-  return <div>
+  return <ShowPageWrapper>
 
     <ShowMainData 
     image={show.image} 
@@ -73,25 +73,25 @@ const Show = () => {
     summary={show.summary} 
     tags={show.genre} 
     />
-    <div>
+    <InfoBlock>
       <h2>Details</h2>
       <Details 
       status={show.status} 
       network={show.network} 
       premied={show.premied}
       />
-    </div>
+    </InfoBlock>
 
-    <div>
+    <InfoBlock>
       <h2>Seasons</h2>
       <Seasons seasons={show._embedded.seasons} />
-    </div>
+    </InfoBlock>
 
-    <div>
+    <InfoBlock>
       <h2>Cast</h2>
       <Cast cast={show._embedded.cast} />
-    </div>
-  </div>;
+    </InfoBlock>
+  </ShowPageWrapper>;
   
 };
 
