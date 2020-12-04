@@ -2,7 +2,7 @@ import React from 'react';
 
 import IMG_PLACEHOLDER from '../../images/not-found.png';
 import { Star } from '../styled';
-import { MainDataWrapper } from './ShowMainData.styled';
+import { MainDataWrapper, HeadLine, Taglist } from './ShowMainData.styled';
 
 const ShowMainData = ({ name, rating, summary, tags, image }) => {
   return (
@@ -12,7 +12,7 @@ const ShowMainData = ({ name, rating, summary, tags, image }) => {
         <HeadLine>
           <h1>{name}</h1>
           <div>
-            <Star />
+            <Star active />
             <span>{rating.average || 'N/A'}</span>
           </div>
         </HeadLine>
