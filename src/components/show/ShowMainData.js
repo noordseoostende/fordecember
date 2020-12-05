@@ -32,3 +32,4 @@ const ShowMainData = ({ name, rating, summary, tags, image }) => {
     </MainDataWrapper>
   );
 };
+export default ShowMainData;
